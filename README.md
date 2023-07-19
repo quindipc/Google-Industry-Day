@@ -11,7 +11,7 @@ Welcome to our team's GitHub repository for the Google Industry Day one-day hack
 - Amy Chen - UX Designer
 - Emmanuel Atuahene - Software Engineer
 - Chelsea Quindipan - Software Engineer
-**Product Manager:** Laura Merino
+- **Product Manager:** Laura Merino
 
 In this project, we will be working with Google to develop a digital solution that will help them better...
 
