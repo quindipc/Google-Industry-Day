@@ -1,0 +1,18 @@
+@use "../partials/_variables" as *;
+@use "../partials/_resets" as *;
+
+
+// Media Query
+@mixin desktop {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+// fonts
