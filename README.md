@@ -3,6 +3,9 @@
 ## Introduction
 Welcome to our team's GitHub repository for the Google Industry Day one-day hackathon hosted by BrainStation, on July 20, 2023. We are a diverse team of data scientists, UI/UX designers, and web developers, united by our passion for innovation and our commitment to deliver a compelling digital solution to a real-world business problem. Our team's name is *The Extremers*!
 
+## Insights AI
+[Click here to view our app!](https://insightsai.netlify.app/)
+
 ## Our team comprises:
 
 - [Moises Vera - Data Scientist](https://www.linkedin.com/in/moisessosav/)
@@ -52,6 +55,16 @@ user engagement directly correlates with trust, this analysis will offer valuabl
 of trust users have in our AI products.
 
 By understanding this relationship, we can make actionable changes to the way users see, experience, and interact with Google products and AI technologies.
+
+## Screenshots 
+<img width="985" alt="image" src="https://github.com/quindipc/insightsai/assets/72505897/27fa5b4a-0ff3-4c40-ac50-5d6248a6f8ce">
+<img width="981" alt="image" src="https://github.com/quindipc/insightsai/assets/72505897/d9e68c87-be49-4c97-a4ea-c6141f2c09ac">
+<img width="426" alt="image" src="https://github.com/quindipc/insightsai/assets/72505897/2a264631-55eb-430c-93b3-8133e9f1b61d">
+<img width="429" alt="image" src="https://github.com/quindipc/insightsai/assets/72505897/f73a1cfd-2077-4138-b6c1-93cf220fe4f9">
+
+
+
+
 
 ## Data Scientists
 As data scientists, our team strives to harness the full potential of data, unearthing valuable insights that drive informed decision-making. Moises Vera, Annie Yan, and Amir Kiani employ their unique skills to analyze, interpret, and manipulate data in innovative ways. With a focus on advanced statistical techniques and cutting-edge machine learning algorithms, we are determined to deliver an exceptional digital solution that empowers Google with actionable intelligence. Our passion for exploring data intricacies and commitment to excellence ensure that our contributions are at the forefront of data-driven innovation.
