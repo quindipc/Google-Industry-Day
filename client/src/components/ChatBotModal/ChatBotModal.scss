@@ -64,10 +64,6 @@
     }
   }
 
-  &__content {
-    // min-height: 12rem;
-  }
-
   &__categories {
     padding: 0.5rem;
   }
@@ -89,10 +85,6 @@
       background-color: $black;
       color: $white;
     }
-
-    // &:active {
-    //   background-color: $black;
-    // }
 
     @include tablet {
       font-size: 1rem;
@@ -198,10 +190,18 @@
     }
   }
 
+  &__tell-more {
+    text-decoration: none;
+    color: $blue1;
+
+    &:hover {
+      color: $blue3;
+    }
+  }
+
   &__input-container {
     display: flex;
     flex-direction: row;
-    // align-items: center;
     justify-content: center;
     width: 100%;
 
@@ -246,14 +246,6 @@
     width: 2rem;
   }
 }
-
-// Selected button styling
-// .chatbot__question.selected,
-// .chatbot__question.clicked,
-// .chatbot__category.selected {
-//   background-color: black;
-//   color: white;
-// }
 
 #chatbot {
   position: fixed;
