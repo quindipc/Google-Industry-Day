@@ -79,8 +79,9 @@
     align-items: center;
     background-color: transparent;
     border: 1px solid $grey2;
-    margin: 1rem;
+    margin: 0.25rem;
     border-radius: 20px;
+    height: 2.5rem;
 
     &:hover {
       cursor: pointer;
@@ -88,18 +89,37 @@
     }
   }
 
-  &__content {
-  }
   &__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-top: 9em;
+  }
+
+  &__label {
+    padding-bottom: 1rem;
+    color: $blue1;
   }
 
   &__input-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  &__input {
+    width: 100%;
+    padding: 0.5625rem 0.25rem 0.5625rem 2.5rem;
+    background-color: $white;
+    border: 0.5px solid $grey1;
+    border-radius: 1rem;
+    box-shadow: $grey2 0px 1px 1px 0px;
+    display: block;
+
+    // add voice assistant icon
+    background: url("../../assets/images/icons/search-24px.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
   }
 
   &__enter {

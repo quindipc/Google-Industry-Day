@@ -63,7 +63,7 @@ export default function ChatBotModal({ handleCloseModal }) {
               Hi, what would you like to learn about me?
             </label>
             <div className="chatbot__input-container">
-              <input className="chatbot__input" type="text" />
+              <input className="chatbot__input" type="text" placeholder="Type here" />
               {/* replace icon here */}
               <button className="chatbot__enter">
                 <img
