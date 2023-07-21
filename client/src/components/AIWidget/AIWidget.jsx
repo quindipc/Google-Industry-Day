@@ -1,5 +1,5 @@
 // Dependancies
-import React, { useState,useEffect } from "react";
+import React, { useState,useEffect, useRef } from "react";
 
 // Assets
 import "./AIWidget.scss";
@@ -12,6 +12,7 @@ import ChatBotModal from "../ChatBotModal/ChatBotModal";
 export default function AIWidget() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const aiWidgetRef = useRef(null);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -22,13 +23,14 @@ export default function AIWidget() {
   };
 
   const handleScroll = () => {
-    const aiWidget = document.getElementById("ai-widget");
-    const topOffset = aiWidget.offsetTop;
+    if (aiWidgetRef.current) {
+      const aiWidgetTopOffset = aiWidgetRef.current.getBoundingClientRect().top;
 
-    if (window.scrollY >= topOffset) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
+      if (aiWidgetTopOffset <= 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
     }
   };
 
