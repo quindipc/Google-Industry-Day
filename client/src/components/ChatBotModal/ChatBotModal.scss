@@ -1,0 +1,32 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/mixins" as *;
+
+.chatbox {
+  width: 15.625rem;
+  height: 28.125rem;
+  background-color: $white;
+  box-shadow: 0 8px 16px -8px $black;
+  border-radius: .625rem;
+  overflow: hidden;
+  //   position: relative;
+  
+  &__header {
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+    background-color: $grey2;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+
+  &__button {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
