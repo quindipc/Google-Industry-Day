@@ -8,7 +8,7 @@ Welcome to our team's GitHub repository for the Google Industry Day one-day hack
 - [Moises Vera - Data Scientist](https://www.linkedin.com/in/moisessosav/)
 - [Annie Yan - Data Scientist](https://www.linkedin.com/in/annie-yq-yan/)
 - [Amir Kiani - Data Scientist](https://www.linkedin.com/in/amirhossein-kiani/)
-- [Amy Chen - UX Designer]()
+- [Amy Chen - UX Designer](https://www.linkedin.com/in/amy-xianwen-chen/)
 - [Emmanuel Atuahene - Software Engineer](https://www.linkedin.com/in/eatuahene/)
 - [Chelsea Quindipan - Software Engineer](https://www.linkedin.com/in/chelsea-quindipan/)
 - **Product Manager:** Laura Merino
