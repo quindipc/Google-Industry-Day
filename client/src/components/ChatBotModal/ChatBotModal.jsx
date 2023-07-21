@@ -14,6 +14,12 @@ export default function ChatBotModal({ handleCloseModal }) {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
   const [clickedQuestion, setClickedQuestion] = useState(null);
 
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
+
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
     setSelectedQuestion(null); // Reset selected question when changing category
@@ -185,7 +191,7 @@ export default function ChatBotModal({ handleCloseModal }) {
           )}
 
           {!selectedCategory && (
-            <form className="chatbot__form">
+            <form className="chatbot__form" onSubmit={handleSubmit}>
               <label className="chatbot__label">
                 Hi, what would you like to learn about me?
               </label>
