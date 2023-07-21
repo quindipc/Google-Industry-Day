@@ -19,13 +19,10 @@
 
   &__container {
     @include tablet {
-      position: fixed;
-      top: 25%;
-      width: 100%;
       display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-      transform: translateY(-50%);
+      flex-direction: column;
+      position: fixed;
+      width: 100%;
       z-index: 999;
     }
   }
@@ -67,25 +64,57 @@
     }
   }
 
+  &__categories {
+
+  }
+
+  &__category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $grey1;
+    border: 1px solid $grey1;
+    margin: 0.25rem;
+    border-radius: 20px;
+    height: 2.5rem;
+    font-size: .75rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $grey2;
+    }
+
+    &:active {
+      background-color: $black;
+    }
+  }
+
   &__questions {
     display: flex;
     flex-direction: column;
+    padding-right: 5rem;
   }
 
   &__question {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: 1px solid $grey2;
+    align-items: flex-start;
+    background-color: $grey1;
+    border: 1px solid $grey1;
     margin: 0.25rem;
     border-radius: 20px;
     height: 2.5rem;
+    font-size: .75rem;
 
     &:hover {
       cursor: pointer;
       background-color: $grey2;
+    }
+
+    &:active {
+      background-color: $black;
     }
   }
 
@@ -94,18 +123,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 9em;
+    // padding-top: 17em;
+
+    @include tablet {
+      // padding: 6.5rem .5rem;
+    }
   }
 
   &__label {
     padding-bottom: 1rem;
     color: $blue1;
 
+    @include tablet {
+      display: none;
+    }
+
     &--tablet {
       display: none;
 
       @include tablet {
         display: flex;
+        color: $blue1;
+        padding: .5rem;
       }
     }
   }
@@ -114,6 +153,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+
+    @include tablet {
+      padding-bottom: 1rem;
+    }
   }
   &__input {
     width: 100%;
@@ -146,6 +190,11 @@
   &__right {
     // width: 1.5625rem;
   }
+}
+
+.chatbot__question.selected {
+  background-color: black;
+  color: white;
 }
 
 #chatbot {
