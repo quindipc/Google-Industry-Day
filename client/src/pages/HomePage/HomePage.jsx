@@ -1,5 +1,6 @@
 // Dependancies
 import React from "react";
+import "./HomePage.scss";
 
 // Assets
 
@@ -11,12 +12,10 @@ import SearchResults from "../../components/SearchResults/SearchResults";
 // Pages
 
 export default function HomePage() {
-
-    return (
-        <>
-             <SearchResults />
-            <AIWidget />
-
-        </>
-    )
+  return (
+    <div className="homepage">
+      <SearchResults />
+      <AIWidget />
+    </div>
+  );
 }
