@@ -1,7 +1,7 @@
 // Dependancies
 import React from "react";
 // import { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // Assets
 import "./Header.scss";
@@ -16,26 +16,33 @@ import MoreIcon from "../../assets/images/icons/threedots.svg";
 // Pages
 
 export default function Header() {
+
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <header className="header">
       <div className="header__logo-container">
-        <img
-          className="header__logo--tablet"
-          src={GoogleLogo}
-          alt="Google Logo"
-        />
+        <Link to="/" className="header__logo-index">
+          <img
+            className="header__logo--tablet"
+            src={GoogleLogo}
+            alt="Google Logo"
+          />
+        </Link>
         <img className="header__menu" src={MenuIcon} alt="menu" />
-        {/* <Link to="/" className="header__logo-index"> */}
-        <img
-          className="header__logo--mobile"
-          src={GoogleLogo}
-          alt="Google Logo"
-        />
-        {/* </Link> */}
+        <Link to="/" className="header__logo-index">
+          <img
+            className="header__logo--mobile"
+            src={GoogleLogo}
+            alt="Google Logo"
+          />
+        </Link>
         <img className="header__avatar--mobile" src={Avatar} alt="Avatar" />
       </div>
 
-      <form className="header__searchbar-container" action="">
+      <form className="header__searchbar-container" onSubmit={handleSearchSubmit}>
         <input className="header__search" type="text" placeholder="Search" />
       </form>
 
