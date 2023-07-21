@@ -148,6 +148,7 @@
   }
 
   &__divider {
+    padding-top: 1rem;
     @include dividerStyles;
   }
 }
