@@ -6,7 +6,7 @@ import { useState } from "react";
 import "./AIWidget.scss";
 
 // Components
-import ChatBotModal from "../ChatBotModal/ChatBotModal"; // Import the ChatBotModal component
+import ChatBotModal from "../ChatBotModal/ChatBotModal";
 
 // Pages
 

@@ -13,25 +13,27 @@ import RightArrow from "../../assets/images/icons/chevron_right-24px.svg";
 
 export default function ChatBotModal({ handleCloseModal }) {
   return (
-    <div className="chatbox">
-      <header className="chatbox__header">
+    <div className="chatbot">
+      <div className="chatbot__container">
+      <header className="chatbot__header">
         <img
-          className="chatbox__logo"
+          className="chatbot__logo"
           src={OoogleSingle}
           alt="Ooogle Logo Single"
         />
         {/* Add a close button to close the modal */}
         <button onClick={handleCloseModal}>
-          <img className="chatbox__down" src={DownArrow} alt="Down Arrow" />
+          <img className="chatbot__down" src={DownArrow} alt="Down Arrow" />
         </button>
       </header>
-      <div className="chatbox__content">
+      <div className="chatbot__content">
         <p>Welcome to the chatbot!</p>
-        <form className="chatbox__form">
-          <input className="chatbox__input" type="text" />
-          <img className="chatbox__right" src={RightArrow} alt="Right Arrow" />
+        <form className="chatbot__form">
+          <input className="chatbot__input" type="text" />
+          <img className="chatbot__right" src={RightArrow} alt="Right Arrow" />
         </form>
-      </div>
+        </div>
+        </div>
     </div>
   );
 }
