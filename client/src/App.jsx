@@ -18,8 +18,9 @@ export default function App() {
     <Header />
 
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/chatbot" element={<ChatBotPage />} />
+        <Route path="/" element={<HomePage />} />
+        {/* This may have to be a modal */}
+        <Route path="/chatbot" element={<ChatBotPage />} />  
     </Routes>
 
     <Footer />
