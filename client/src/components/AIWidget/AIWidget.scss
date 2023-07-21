@@ -6,7 +6,6 @@
   &__tooltip {
     display: none;
     position: absolute;
-    transform: translateX(-50%);
     background-color: $blue1;
     color: $white;
     padding: 0.5rem;
@@ -14,11 +13,14 @@
     font-size: 0.75rem;
     border-radius: 20px;
     z-index: 1;
+    width: 20rem;
+    margin: 0 8rem;
 
     // Visibility on hover
-    .aiwidget__container:hover & {
-      display: block;
-      margin-right: 5rem;
+    @include desktop {
+      .aiwidget__container:hover & {
+        display: block;
+      }
     }
   }
 
@@ -79,3 +81,4 @@
     }
   }
 }
+
