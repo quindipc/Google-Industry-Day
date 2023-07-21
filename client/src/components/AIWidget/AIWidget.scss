@@ -23,32 +23,32 @@
   }
 
   &__button {
-
     &--mobile {
-        background: url("../../assets/images/icons/chat-blue.svg");
-        background-repeat: no-repeat;
-        background-position: right 10px center;
-        @include tablet {
-            display: none;
-        }
+      color: transparent;
+      background: url("../../assets/images/icons/chat-blue.svg");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      @include tablet {
+        display: none;
+      }
     }
 
     &--tablet {
-        display: none;
-        @include tablet {
-            display: block;
-          border-radius: 40%;
-          padding: 0.5rem 1rem;
-          width: 7rem;
-          border: 1px solid $black;
-          display: flex;
-          justify-content: flex-end;
-          align-self: center;
-          margin-left: 2rem;
-          background: url("../../assets/images/icons/chat-blue.svg");
-          background-repeat: no-repeat;
-          background-position: right 10px center;
-        }
+      display: none;
+      @include tablet {
+        display: block;
+        border-radius: 40%;
+        padding: 0.5rem 1rem;
+        width: 7rem;
+        border: 1px solid $black;
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+        margin-left: 2rem;
+        background: url("../../assets/images/icons/chat-blue.svg");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+      }
     }
   }
 }

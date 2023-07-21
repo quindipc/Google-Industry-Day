@@ -1,6 +1,5 @@
 // Dependancies
-import React from "react";
-import { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 // Assets
 import "./AIWidget.scss";
@@ -12,6 +11,7 @@ import ChatBotModal from "../ChatBotModal/ChatBotModal";
 
 export default function AIWidget() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -20,11 +20,33 @@ export default function AIWidget() {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
+
+  const handleScroll = () => {
+    const aiWidget = document.getElementById("ai-widget");
+    const topOffset = aiWidget.offsetTop;
+
+    if (window.scrollY >= topOffset) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  // Scroll event listener
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <div className="aiwidget__container">
-          <button className="aiwidget__button--mobile"onClick={handleOpenModal}>AI</button>
-          <button className="aiwidget__button--tablet"onClick={handleOpenModal}>AI</button>
+           <div className={`aiwidget__container ${isSticky ? "sticky" : ""}`} id="ai-widget">
+        <button className="aiwidget__button--mobile" onClick={handleOpenModal}>AI
+        </button>
+        <button className="aiwidget__button--tablet" onClick={handleOpenModal}>
+          AI
+        </button>
       </div>
           
       {/* Render the ChatBotModal if isModalOpen is true */}
