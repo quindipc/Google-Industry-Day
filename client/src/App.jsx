@@ -8,7 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import ChatBotPage from "./pages/ChatBotPage/ChatBotPage";
 
 // Components
-import Header from "./components/Header/Header";
+import Header from "./components/Header/Header"
+import SearchResults from './components/SearchResults/SearchResults';
 
 export default function App() {
   return (
