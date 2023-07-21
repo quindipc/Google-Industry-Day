@@ -14,6 +14,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Header />
+      {/* <AIWidget/> */}
       {/* Render the Header component */}
       <Routes>
         <Route path="/" element={<HomePage />} />
