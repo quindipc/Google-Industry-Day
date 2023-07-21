@@ -10,7 +10,7 @@
 // Pages
 
 
-export default function Footer() {
+export default function SearchResults() {
 
     return (
         <>
