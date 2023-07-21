@@ -9,13 +9,15 @@ import './App.css'
 
 // Components
 import Header from "./components/Header/Header"
+import SearchResults from './components/SearchResults/SearchResults';
 
 export default function App() {
  
 
   return (
     <>
-  <Header />
+  {/* <Header /> */}
+  <SearchResults/>
     </>
   //   <BrowserRouter>
   //   {/* Render the Header component */}
