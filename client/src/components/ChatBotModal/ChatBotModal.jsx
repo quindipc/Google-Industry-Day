@@ -53,9 +53,10 @@ export default function ChatBotModal({ handleCloseModal }) {
         </button>
       </header>
       <div className="chatbot__content">
-        <p>Hi, what would you like to learn about me?</p>
-        <form className="chatbot__form">
-          <input className="chatbot__input" type="text" />
+          <form className="chatbot__form">
+            <label className="chatbot__label">Hi, what would you like to learn about me?</label>
+            <input className="chatbot__input" type="text" />
+            {/* replace icon here */}
           <img className="chatbot__right" src={RightArrow} alt="Right Arrow" />
         </form>
         </div>
