@@ -5,7 +5,7 @@ import "./ChatBotModal.scss";
 // Assets
 import OoogleSingle from "../../assets/images/logo/OOGLE-single-logo.png";
 import DownArrow from "../../assets/images/icons/arrow_drop_down-24px.svg";
-import RightArrow from "../../assets/images/icons/chevron_right-24px.svg";
+import RightArrow from "../../assets/images/icons/blue-right.svg";
 
 export default function ChatBotModal({ handleCloseModal }) {
   const chatbotRef = useRef(null);
@@ -162,9 +162,9 @@ export default function ChatBotModal({ handleCloseModal }) {
              {question.text}
            </button>
               ))}
-              <div className="chatbot__back" onClick={handleGoBackToCategories}>
+              <button className="chatbot__back" onClick={handleGoBackToCategories}>
                 Go Back to Categories
-              </div>
+              </button>
             </div>
           )}
 
@@ -175,12 +175,12 @@ export default function ChatBotModal({ handleCloseModal }) {
                   (question) => question.id === selectedQuestion,
                 )?.answer
               }
-              <div
+              <button
                 className="chatbot__back"
                 onClick={() => setSelectedQuestion(null)}
               >
                 Go Back to Questions
-              </div>
+              </button>
             </div>
           )}
 
