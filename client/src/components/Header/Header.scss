@@ -97,7 +97,10 @@
     border-radius: 1rem;
     box-shadow: $grey2 0px 5px 5px 0px;
     display: block;
-    background: url("../../assets/images/icons/search-24px.svg") no-repeat 13px;
+    // TODO: Add the correct images here -- search, voice assistant, other image if needed
+    background: url("../../assets/images/icons/search-24px.svg"), url("../../assets/images/icons/search-24px.svg"), url("../../assets/images/icons/search-24px.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right 10px center, right 35px center, right 65px center;
     width: 100%;
     &:focus {
       outline: none;
