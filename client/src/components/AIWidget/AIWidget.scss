@@ -51,12 +51,10 @@
       @include tablet {
         display: none;
       }
-      &.hovered{
-        background-image: url($hoverImage);
+      &.hovered {
+        background-image: url("../../assets/images/icons/chat-green.svg");
       }
-     
     }
-    
 
     &--tablet {
       display: none;
@@ -74,6 +72,10 @@
         background-repeat: no-repeat;
         background-position: right 10px center;
       }
+      &.hovered {
+        background-image: url("../../assets/images/icons/insight-green.svg");
+      }
+      
     }
   }
 }

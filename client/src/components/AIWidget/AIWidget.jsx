@@ -55,11 +55,18 @@ export default function AIWidget() {
 
         <button
           className={`aiwidget__button--mobile ${isHovered ? "hovered" : ""}`}
-          onClick={handleOpenModal} onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}
+          onClick={handleOpenModal}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
           AI
         </button>
-        <button className="aiwidget__button--tablet" onClick={handleOpenModal}>
+        <button
+          className="aiwidget__button--tablet"
+          onClick={handleOpenModal}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           AI
         </button>
       </div>
