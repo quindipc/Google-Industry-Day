@@ -12,11 +12,13 @@
     padding: 0.5rem;
     border-radius: 4px;
     font-size: 0.75rem;
+    border-radius: 20px;
     z-index: 1;
 
     // Visibility on hover
-    .aiwidget__container:hover  & {
+    .aiwidget__container:hover & {
       display: block;
+      margin-right: 5rem;
     }
   }
 

@@ -8,8 +8,7 @@ import HomePage from "./pages/HomePage/HomePage";
 // import ChatBotPage from "./pages/ChatBotPage/ChatBotPage";
 
 // Components
-import Header from "./components/Header/Header"
-import AIWidget from "./components/AIWidget/AIWidget";
+import Header from "./components/Header/Header";
 
 export default function App() {
   return (
