@@ -8,10 +8,10 @@
     align-items: center;
     padding: 1rem;
 
-    // @include tablet {
-    //     flex-direction: row;
-    //     align-items: flex-start;
-    //     justify-content: center;
-    // }
+    @include tablet {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
 }
 

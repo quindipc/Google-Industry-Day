@@ -16,10 +16,10 @@
   @include tablet {
     max-width: 1280px;
     border: none;
-    margin: auto;
   }
-
+  
   @include desktop {
+    margin: auto;
   }
   &__info {
     flex: 1;

@@ -22,7 +22,9 @@ export default function AIWidget() {
   };
   return (
     <>
-          <button onClick={handleOpenModal}></button>
+      <div className="aiwidget__container">
+          <button className="aiwidget__button"onClick={handleOpenModal}>AI</button>
+      </div>
           
       {/* Render the ChatBotModal if isModalOpen is true */}
       {isModalOpen && <ChatBotModal handleCloseModal={handleCloseModal} />}

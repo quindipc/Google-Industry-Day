@@ -1,3 +1,33 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/resets" as *;
 @use "../../styles/partials/mixins" as *;
+
+.aiwidget {
+  &__container {
+    position: fixed;
+    top: 25%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    transform: translateY(-50%);
+    z-index: 999;
+
+    @include tablet {
+        max-width: 80rem;
+    }
+
+    @include desktop {
+        margin: auto;
+    }
+  }
+
+  &__button {
+    @include tablet {
+      display: flex;
+      justify-content: flex-end;
+      align-self: center;
+      margin-left: 2rem;
+    }
+  }
+}
