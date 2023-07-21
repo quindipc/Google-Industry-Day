@@ -11,14 +11,6 @@
   overflow: hidden;
   width: 100%;
 
-  // @include tablet {
-  //   max-width: 80rem;
-  // }
-
-  // @include desktop {
-  //   margin-right: auto;
-  // }
-
   &__container {
     @include tablet {
       display: flex;
