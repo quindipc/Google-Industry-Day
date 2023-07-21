@@ -51,7 +51,12 @@
       @include tablet {
         display: none;
       }
+      &.hovered{
+        background-image: url($hoverImage);
+      }
+     
     }
+    
 
     &--tablet {
       display: none;

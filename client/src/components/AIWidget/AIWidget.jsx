@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 // Assets
 import "./AIWidget.scss";
+import hoverImage from "../../assets/images/icons/insight-green.svg";
 
 // Components
 import ChatBotModal from "../ChatBotModal/ChatBotModal";
@@ -12,6 +13,7 @@ import ChatBotModal from "../ChatBotModal/ChatBotModal";
 export default function AIWidget() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const aiWidgetRef = useRef(null);
 
   const handleOpenModal = () => {
@@ -41,7 +43,7 @@ export default function AIWidget() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   return (
     <>
       <div
@@ -51,7 +53,10 @@ export default function AIWidget() {
       >
         <div className="aiwidget__tooltip">Powered by AI</div>
 
-        <button className="aiwidget__button--mobile" onClick={handleOpenModal}>
+        <button
+          className={`aiwidget__button--mobile ${isHovered ? "hovered" : ""}`}
+          onClick={handleOpenModal} onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}
+        >
           AI
         </button>
         <button className="aiwidget__button--tablet" onClick={handleOpenModal}>
