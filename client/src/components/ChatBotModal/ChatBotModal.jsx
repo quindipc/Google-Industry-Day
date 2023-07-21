@@ -21,8 +21,9 @@ export default function ChatBotModal({ handleCloseModal }) {
           alt="Ooogle Logo Single"
         />
         {/* Add a close button to close the modal */}
-        <button onClick={handleCloseModal}>Close</button>
-        <img className="chatbox__down" src={DownArrow} alt="Down Arrow" />
+        <button onClick={handleCloseModal}>
+          <img className="chatbox__down" src={DownArrow} alt="Down Arrow" />
+        </button>
       </header>
       <div className="chatbox__content">
         <p>Welcome to the chatbot!</p>
