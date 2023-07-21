@@ -14,20 +14,36 @@
     z-index: 999;
 
     @include tablet {
-        max-width: 80rem;
+      max-width: 80rem;
     }
 
     @include desktop {
-        margin: auto;
+      margin: auto;
     }
   }
 
   &__button {
-    @include tablet {
-      display: flex;
-      justify-content: flex-end;
-      align-self: center;
-      margin-left: 2rem;
+
+    &--mobile {
+        background: url("../../assets/images/icons/chat-blue.svg");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+    }
+
+    &--tablet {
+        @include tablet {
+          border-radius: 40%;
+          padding: 0.5rem 1rem;
+          width: 7rem;
+          border: 1px solid $black;
+          display: flex;
+          justify-content: flex-end;
+          align-self: center;
+          margin-left: 2rem;
+          background: url("../../assets/images/icons/chat-blue.svg");
+          background-repeat: no-repeat;
+          background-position: right 10px center;
+        }
     }
   }
 }

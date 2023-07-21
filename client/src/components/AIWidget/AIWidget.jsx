@@ -23,7 +23,8 @@ export default function AIWidget() {
   return (
     <>
       <div className="aiwidget__container">
-          <button className="aiwidget__button"onClick={handleOpenModal}>AI</button>
+          <button className="aiwidget__button--mobile"onClick={handleOpenModal}>AI</button>
+          <button className="aiwidget__button--tablet"onClick={handleOpenModal}>AI</button>
       </div>
           
       {/* Render the ChatBotModal if isModalOpen is true */}
