@@ -3,19 +3,18 @@ import React from "react";
 
 // Assets
 
-
 // Components
 import AIWidget from "../../components/AIWidget/AIWidget";
 
+import SearchResults from "../../components/SearchResults/SearchResults";
 
 // Pages
-
 
 export default function HomePage() {
 
     return (
         <>
-            <h1>Insert Search Results Here</h1>
+             <SearchResults />
             <AIWidget />
 
         </>
