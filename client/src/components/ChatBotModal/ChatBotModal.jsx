@@ -12,6 +12,7 @@ export default function ChatBotModal({ handleCloseModal }) {
   const [isSticky, setIsSticky] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedQuestion, setSelectedQuestion] = useState(null);
+  const [clickedQuestion, setClickedQuestion] = useState(null);
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
@@ -19,6 +20,7 @@ export default function ChatBotModal({ handleCloseModal }) {
   };
 
   const handleQuestionClick = (questionId) => {
+    setClickedQuestion(questionId);
     setSelectedQuestion(questionId);
   };
 

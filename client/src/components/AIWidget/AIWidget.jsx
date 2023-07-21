@@ -41,6 +41,7 @@ export default function AIWidget() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
   return (
     <>
       <div
@@ -57,7 +58,6 @@ export default function AIWidget() {
           AI
         </button>
       </div>
-
       {/* Render the ChatBotModal if isModalOpen is true */}
       {isModalOpen && <ChatBotModal handleCloseModal={handleCloseModal} />}
     </>
