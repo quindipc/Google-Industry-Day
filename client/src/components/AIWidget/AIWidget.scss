@@ -62,8 +62,8 @@
         display: block;
         border-radius: 20px;
         padding: 0.5rem 1rem;
-        width: 7rem;
-        border: 1px solid $black;
+        width: 9rem;
+        height: 7rem;
         display: flex;
         justify-content: flex-end;
         align-self: center;
@@ -75,7 +75,7 @@
       &.hovered {
         background-image: url("../../assets/images/icons/insight-green.svg");
       }
-      
+
     }
   }
 }

@@ -62,12 +62,12 @@ export default function AIWidget() {
           AI
         </button>
         <button
-          className="aiwidget__button--tablet"
+          className={`aiwidget__button--tablet ${isHovered ? "hovered" : ""}`}
           onClick={handleOpenModal}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          AI
+          
         </button>
       </div>
       {/* Render the ChatBotModal if isModalOpen is true */}
