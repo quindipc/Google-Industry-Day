@@ -9,11 +9,13 @@ import HomePage from "./pages/HomePage/HomePage";
 
 // Components
 import Header from "./components/Header/Header"
+import AIWidget from "./components/AIWidget/AIWidget";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Header />
+      <AIWidget/>
       {/* Render the Header component */}
       <Routes>
         //       <Route path="/" element={<HomePage />} />
