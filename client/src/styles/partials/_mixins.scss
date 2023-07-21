@@ -15,4 +15,10 @@
     }
 }
 
-// fonts
+// Divider styles 
+@mixin dividerStyles {
+    border: none;
+    border-bottom: .1rem solid $grey1;
+    margin: auto;
+    width: 100%;
+  }

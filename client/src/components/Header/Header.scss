@@ -146,4 +146,8 @@
       }
     }
   }
+
+  &__divider {
+    @include dividerStyles;
+  }
 }
