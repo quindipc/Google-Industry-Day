@@ -55,6 +55,11 @@
 
   &__menu {
     width: 1.5rem;
+
+    &:hover{
+        cursor: pointer;
+    }
+
     @include tablet {
         display: none;
     }
@@ -107,6 +112,9 @@
       outline: none;
       border: 2px solid $grey1;
     }
+    &:hover{
+        cursor: pointer;
+    }
   }
   &__profile-settings {
     display: flex;
@@ -116,6 +124,9 @@
 
   &__edit-icon {
     display: none;
+    &:hover{
+        cursor: pointer;
+    }
 
     @include tablet {
       display: flex;
@@ -125,6 +136,9 @@
   }
 
   &__avatar {
+    &:hover{
+        cursor: pointer;
+    }
     &--mobile {
       border-radius: 50%;
       object-fit: cover;
@@ -133,6 +147,10 @@
       margin: 1rem;
       display: none;
       display: flex;
+      &:hover{
+        cursor: pointer;
+    }
+      
       @include tablet {
         display: none;
       }
@@ -140,6 +158,9 @@
 
     &--tablet {
       display: none;
+      &:hover{
+        cursor: pointer;
+    }
       @include tablet {
         border-radius: 50%;
         object-fit: cover;
