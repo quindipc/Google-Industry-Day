@@ -2,7 +2,6 @@
 
 
 // Assets
-import './Header.scss'
 
 
 // Components
@@ -11,7 +10,7 @@ import './Header.scss'
 // Pages
 
 
-export default function Header() {
+export default function ChatBotPage() {
 
     return (
         <>

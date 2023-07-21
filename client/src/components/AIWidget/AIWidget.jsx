@@ -2,8 +2,7 @@
 
 
 // Assets
-import './Header.scss'
-
+import './AIWidget.scss'
 
 // Components
 
@@ -11,7 +10,7 @@ import './Header.scss'
 // Pages
 
 
-export default function Header() {
+export default function AIWidget() {
 
     return (
         <>

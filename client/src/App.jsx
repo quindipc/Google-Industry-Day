@@ -3,9 +3,11 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Pages
-import HomePage from './pages/HomePage/HomePage';
+import HomePage from "./pages/HomePage/HomePage";
+import ChatBotPage from "./pages/ChatBotPage/ChatBotPage";
 
 // Components
+import Header from "./components/Header/Header"
 
 export default function App() {
  
@@ -17,10 +19,7 @@ export default function App() {
 
     <Routes>
       <Route path="/" element={<HomePage />} />
-      {/* <Route path="/" element={<HomePage />} />
-      <Route path="/" element={<HomePage />} />
-      <Route path="/" element={<HomePage />} />
-      <Route path="/" element={<HomePage />} /> */}
+      <Route path="/chatbot" element={<ChatBotPage />} />
     </Routes>
 
     <Footer />
