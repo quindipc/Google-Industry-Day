@@ -10,17 +10,20 @@ import RightArrow from "../../assets/images/icons/chevron_right-24px.svg";
 export default function ChatBotModal({ handleCloseModal }) {
   const chatbotRef = useRef(null);
   const [isSticky, setIsSticky] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState(
-    "General AI Questions",
-  );
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedQuestion, setSelectedQuestion] = useState(null);
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+    setSelectedQuestion(null); // Reset selected question when changing category
+  };
 
   const handleQuestionClick = (questionId) => {
     setSelectedQuestion(questionId);
   };
 
   const handleGoBackToCategories = () => {
-    setSelectedCategory(null);
+    setSelectedCategory("");
     setSelectedQuestion(null);
   };
 
@@ -146,12 +149,12 @@ export default function ChatBotModal({ handleCloseModal }) {
             </div>
           )}
 
-          {selectedCategory && !selectedQuestion && (
+         {selectedCategory && !selectedQuestion && (
             <div className="chatbot__questions">
               {categories[selectedCategory].map((question) => (
                 <button
                   key={question.id}
-                  className="chatbot__question"
+                  className={`chatbot__question ${selectedQuestion === question.id ? "selected" : ""}`}
                   onClick={() => handleQuestionClick(question.id)}
                 >
                   {question.text}
@@ -165,10 +168,15 @@ export default function ChatBotModal({ handleCloseModal }) {
 
           {selectedCategory && selectedQuestion && (
             <div className="chatbot__answer">
-              {categories[selectedCategory].find(
-                (question) => question.id === selectedQuestion
-              )?.answer}
-              <div className="chatbot__back" onClick={() => setSelectedQuestion(null)}>
+              {
+                categories[selectedCategory].find(
+                  (question) => question.id === selectedQuestion,
+                )?.answer
+              }
+              <div
+                className="chatbot__back"
+                onClick={() => setSelectedQuestion(null)}
+              >
                 Go Back to Questions
               </div>
             </div>

@@ -192,6 +192,11 @@
   }
 }
 
+.chatbot__question.selected {
+  background-color: black;
+  color: white;
+}
+
 #chatbot {
   position: fixed;
   bottom: 1rem;
