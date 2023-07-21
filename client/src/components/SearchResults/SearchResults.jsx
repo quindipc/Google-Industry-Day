@@ -6,43 +6,43 @@ const SearchResults = () => {
   const dummyResults = [
     {
       id: 1,
-      title: "Lorem42",
+      title: "Google Insight is out now",
       url: "https://www.google.ca",
       comments:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-      img: "https://via.placeholder.com/150",
+      img: "https://picsum.photos/id/123/200/300",
     },
     {
-      id: 1,
-      title: " where does it come from?",
+      id: 2,
+      title: " Where does it come from?",
       url: "https://www.lipsum.com/",
       comments:
-        " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ",
-      img: "https://via.placeholder.com/150",
+        " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      img: "https://picsum.photos/id/452/200/300",
     },
     {
-      id: 1,
+      id: 3,
       title: "Why do we use it?",
       url: "https://www.lipsum.com/",
       comments:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  ",
-      img: "https://via.placeholder.com/150",
+        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      img: "https://picsum.photos/id/412/200/300",
     },
     {
-      id: 1,
-      title: "Why do we use it?",
+      id: 4,
+      title: "New Ai Technology is here!",
       url: "https://www.lipsum.com/",
       comments:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  ",
-      img: "https://via.placeholder.com/150",
+        "when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      img: "https://picsum.photos/id/892/200/300",
     },
     {
-      id: 1,
-      title: "Why do we use it?",
+      id: 5,
+      title: "How to leverage your business ideas",
       url: "https://www.lipsum.com/",
       comments:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  ",
-      img: "https://via.placeholder.com/150",
+        "Placeholder text is commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+      img: "https://picsum.photos/id/932/200/300",
     },
     
   ];
