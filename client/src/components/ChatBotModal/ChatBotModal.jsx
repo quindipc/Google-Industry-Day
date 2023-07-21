@@ -1,5 +1,5 @@
 // Dependancies
-import React, {useState, useEffect, useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./ChatBotModal.scss";
 
 // Assets
@@ -37,30 +37,45 @@ export default function ChatBotModal({ handleCloseModal }) {
 
   return (
     <div
-    className={`chatbot ${isSticky ? "chatbot--sticky" : ""}`}
-    id="chatbot"
-  >
+      className={`chatbot ${isSticky ? "chatbot--sticky" : ""}`}
+      id="chatbot"
+    >
       <div className="chatbot__container">
-      <header className="chatbot__header">
-        <img
-          className="chatbot__logo"
-          src={OoogleSingle}
-          alt="Ooogle Logo Single"
-        />
-        {/* Add a close button to close the modal */}
-        <button className="chatbot__button-down" onClick={handleCloseModal}>
-          <img className="chatbot__down" src={DownArrow} alt="Down Arrow" />
-        </button>
-      </header>
-      <div className="chatbot__content">
+        <header className="chatbot__header">
+          <img
+            className="chatbot__logo"
+            src={OoogleSingle}
+            alt="Ooogle Logo Single"
+          />
+          {/* Add a close button to close the modal */}
+          <button className="chatbot__button-down" onClick={handleCloseModal}>
+            <img className="chatbot__down" src={DownArrow} alt="Down Arrow" />
+          </button>
+        </header>
+        <div className="chatbot__content">
+          <div className="chatbot__questions">
+          <button className="chatbot__question">Question 1</button>
+          <button className="chatbot__question">Question 1</button>
+          <button className="chatbot__question">Question 1</button>
+          </div>
           <form className="chatbot__form">
-            <label className="chatbot__label">Hi, what would you like to learn about me?</label>
-            <input className="chatbot__input" type="text" />
-            {/* replace icon here */}
-          <img className="chatbot__right" src={RightArrow} alt="Right Arrow" />
-        </form>
+            <label className="chatbot__label">
+              Hi, what would you like to learn about me?
+            </label>
+            <div className="chatbot__input-container">
+              <input className="chatbot__input" type="text" />
+              {/* replace icon here */}
+              <button className="chatbot__enter">
+                <img
+                  className="chatbot__right"
+                  src={RightArrow}
+                  alt="Right Arrow"
+                />
+              </button>
+            </div>
+          </form>
         </div>
-        </div>
+      </div>
     </div>
   );
 }

@@ -28,6 +28,7 @@
       background: url("../../assets/images/icons/chat-blue.svg");
       background-repeat: no-repeat;
       background-position: right 10px center;
+      border-radius: 20px;
       @include tablet {
         display: none;
       }
@@ -37,7 +38,7 @@
       display: none;
       @include tablet {
         display: block;
-        border-radius: 40%;
+        border-radius: 20px;
         padding: 0.5rem 1rem;
         width: 7rem;
         border: 1px solid $black;
