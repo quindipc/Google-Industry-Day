@@ -14,11 +14,9 @@ export default function ChatBotModal({ handleCloseModal }) {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
   const [clickedQuestion, setClickedQuestion] = useState(null);
 
-
   const handleSubmit = (event) => {
     event.preventDefault();
   };
-
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
@@ -157,18 +155,23 @@ export default function ChatBotModal({ handleCloseModal }) {
             </div>
           )}
 
-         {selectedCategory && !selectedQuestion && (
-         <div className="chatbot__questions">
-         {categories[selectedCategory].map((question) => (
-           <button
-             key={question.id}
-             className={`chatbot__question ${selectedQuestion === question.id ? "selected" : ""} ${clickedQuestion === question.id ? "clicked" : ""}`}
-             onClick={() => handleQuestionClick(question.id)}
-           >
-             {question.text}
-           </button>
+          {selectedCategory && !selectedQuestion && (
+            <div className="chatbot__questions">
+              {categories[selectedCategory].map((question) => (
+                <button
+                  key={question.id}
+                  className={`chatbot__question ${
+                    selectedQuestion === question.id ? "selected" : ""
+                  } ${clickedQuestion === question.id ? "clicked" : ""}`}
+                  onClick={() => handleQuestionClick(question.id)}
+                >
+                  {question.text}
+                </button>
               ))}
-              <button className="chatbot__back" onClick={handleGoBackToCategories}>
+              <button
+                className="chatbot__back"
+                onClick={handleGoBackToCategories}
+              >
                 Go Back to Categories
               </button>
             </div>
@@ -181,11 +184,13 @@ export default function ChatBotModal({ handleCloseModal }) {
                   (question) => question.id === selectedQuestion,
                 )?.answer
               }
-               <a
+              <a
                 className="chatbot__tell-more"
                 href="https://www.google.com"
-                target="_blank" 
-              > Tell Me More!
+                target="_blank"
+              >
+                {" "}
+                Tell Me More!
               </a>
               <button
                 className="chatbot__back"
