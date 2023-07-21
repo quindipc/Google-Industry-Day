@@ -22,7 +22,7 @@ export default function AIWidget() {
   };
   return (
     <>
-          <button onClick={handleOpenModal}>TEMP BUTTON</button>
+          <button onClick={handleOpenModal}>TEMP AI WIDGET</button>
           
       {/* Render the ChatBotModal if isModalOpen is true */}
       {isModalOpen && <ChatBotModal handleCloseModal={handleCloseModal} />}
