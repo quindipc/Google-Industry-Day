@@ -152,15 +152,15 @@ export default function ChatBotModal({ handleCloseModal }) {
           )}
 
          {selectedCategory && !selectedQuestion && (
-            <div className="chatbot__questions">
-              {categories[selectedCategory].map((question) => (
-                <button
-                  key={question.id}
-                  className={`chatbot__question ${selectedQuestion === question.id ? "selected" : ""}`}
-                  onClick={() => handleQuestionClick(question.id)}
-                >
-                  {question.text}
-                </button>
+         <div className="chatbot__questions">
+         {categories[selectedCategory].map((question) => (
+           <button
+             key={question.id}
+             className={`chatbot__question ${selectedQuestion === question.id ? "selected" : ""} ${clickedQuestion === question.id ? "clicked" : ""}`}
+             onClick={() => handleQuestionClick(question.id)}
+           >
+             {question.text}
+           </button>
               ))}
               <div className="chatbot__back" onClick={handleGoBackToCategories}>
                 Go Back to Categories
