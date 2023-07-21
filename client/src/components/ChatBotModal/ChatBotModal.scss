@@ -100,6 +100,14 @@
   &__label {
     padding-bottom: 1rem;
     color: $blue1;
+
+    &--tablet {
+      display: none;
+
+      @include tablet {
+        display: flex;
+      }
+    }
   }
 
   &__input-container {

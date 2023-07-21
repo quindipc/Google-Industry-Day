@@ -3,6 +3,25 @@
 @use "../../styles/partials/mixins" as *;
 
 .aiwidget {
+  &__tooltip {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    z-index: 1;
+
+    // Adjust the visibility on hover
+    .aiwidget__container:hover & {
+      display: block;
+    }
+  }
+
   &__container {
     position: fixed;
     top: 25%;

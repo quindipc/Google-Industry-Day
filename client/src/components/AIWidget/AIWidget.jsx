@@ -1,5 +1,5 @@
 // Dependancies
-import React, { useState,useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // Assets
 import "./AIWidget.scss";
@@ -43,14 +43,21 @@ export default function AIWidget() {
   }, []);
   return (
     <>
-           <div className={`aiwidget__container ${isSticky ? "sticky" : ""}`} id="ai-widget">
-        <button className="aiwidget__button--mobile" onClick={handleOpenModal}>AI
+      <div
+        className={`aiwidget__container ${isSticky ? "sticky" : ""}`}
+        id="ai-widget"
+        ref={aiWidgetRef}
+      >
+        <div className="aiwidget__tooltip">Powered by AI</div>
+
+        <button className="aiwidget__button--mobile" onClick={handleOpenModal}>
+          AI
         </button>
         <button className="aiwidget__button--tablet" onClick={handleOpenModal}>
           AI
         </button>
       </div>
-          
+
       {/* Render the ChatBotModal if isModalOpen is true */}
       {isModalOpen && <ChatBotModal handleCloseModal={handleCloseModal} />}
     </>
