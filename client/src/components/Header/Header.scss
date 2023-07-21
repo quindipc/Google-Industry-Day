@@ -1,3 +1,60 @@
-@use "../partials/_variables" as *;
-@use "../partials/_resets" as *;
-@use "../partials/_mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    background-color: white; //turn to variable later
+
+    @include tablet {
+        padding-bottom: 1.5rem;
+      }
+
+  &__logo {
+    // Add styles for the logo
+  }
+
+  &__searchbar {
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+      width: 12.5rem;
+    }
+
+    &__search {
+      padding: 0.5rem;
+      border: 0.0625rem solid #ccc;
+      border-radius: 0.25rem;
+      width: 100%;
+      margin-right: 0.625rem;
+    }
+
+    &__button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .profile-settings {
+    display: flex;
+    align-items: center;
+  }
+  &__edit-icon {
+    font-size: 1.2rem;
+    margin-right: 0.3125rem;
+  }
+  &__avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+}
